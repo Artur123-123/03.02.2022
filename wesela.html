@@ -38,7 +38,7 @@
         <input type="number" id="goscie">
         <input type="checkbox" id="checkbox">
         <label>Wesele z poprawinami?</label>
-        <button onclick="pobieranie(value)">Oblicz koszt</button>
+        <button onclick="pobieranie()">Oblicz koszt</button>
         <p id="wynik"></p>
     </div>
     <footer id="footer">Stronę opracował: 000000000</footer>
@@ -50,7 +50,7 @@
         const wynik = document.getElementById('wynik');
         const goscie = document.getElementById('goscie').value
         const checkbox = document.getElementById('checkbox').checked;
-        const koszt = 0;
+        let koszt = 0;
         if(checkbox) {
             koszt=(goscie*100)+(30/100(goscie*100));
         }
